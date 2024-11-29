@@ -7,6 +7,7 @@ import SharedJsonView from './components/SharedJsonView';
 import Header from './components/Header';
 import { defaultJson } from './utils/constants';
 import './App.css';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const theme = createTheme({
   typography: {
@@ -150,6 +151,7 @@ function App() {
             />
           )}
         </main>
+        <SpeedInsights />
       </div>
     </ThemeProvider>
   );
